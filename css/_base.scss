@@ -1,0 +1,73 @@
+body {
+    font: 16px raleway;
+}
+body, select, input, textarea {
+    color:hsl(25,5%,10%);
+}
+
+a {
+    color: hsl(200,50%,40%);
+
+    &:hover {
+        color: hsl(200,50%,60%);
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+::-moz-selection{
+    background: #fcd700;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #fcd700;
+    color: #fff;
+    text-shadow: none;
+}
+
+a:link {
+    -webkit-tap-highlight-color: #fcd700;
+}
+
+ins {
+    background-color: #fcd700;
+    color: #000;
+    text-decoration: none;
+}
+mark {
+    background-color: #fcd700;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+input:-moz-placeholder {
+    color:#a9a9a9;
+}
+textarea:-moz-placeholder {
+    color:#a9a9a9;
+}
+
+blockquote {
+    padding: 16px;
+    background: #eee;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
