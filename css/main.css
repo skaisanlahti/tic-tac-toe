@@ -1,3 +1,5 @@
+/*=== Imports ===
+=============================================================================*/
 /*=== Fonts ===
 =============================================================================*/
 @font-face {
@@ -346,4 +348,142 @@ blockquote {
 -------------------------------------------------------------------------------*/
 /* Print styles
 -------------------------------------------------------------------------------*/
+/*=== Variables ===
+=============================================================================*/
+/*=== Main Styles ===
+=============================================================================*/
+body {
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0d0c0c), to(#393d46));
+  background-image: linear-gradient(to top, #0d0c0c, #393d46);
+  color: #f2f2f2;
+}
+
+.ttt-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.ttt-header__title {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.ttt-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ttt-main__players {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  width: 450px;
+  margin-bottom: 30px;
+}
+
+.ttt-main__player-panel, .ttt-main__gamebuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ttt-main__player-name--1, .ttt-main__player-name--2 {
+  font-size: 20px;
+}
+
+.ttt-main__player-mark--1, .ttt-main__player-mark--2 {
+  font-size: 50px;
+}
+
+.ttt-main__gamebuttons button {
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.ttt-main__gamebuttons button:active {
+  color: #999999;
+  border: 1px solid #999999;
+}
+
+.ttt-main__winner {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ttt-main__gameboard {
+  width: 490px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+.ttt-main__cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 150px;
+  font-size: 100px;
+  border: 1px solid #f2f2f2;
+}
+
+.ttt-main__cell:hover {
+  cursor: pointer;
+}
+
+.active-player {
+  text-decoration: underline;
+  color: #ff9966;
+}
+
+.invisible {
+  visibility: hidden;
+}
 /*# sourceMappingURL=main.css.map */

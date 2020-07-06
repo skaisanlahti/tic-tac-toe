@@ -1,3 +1,107 @@
+/*=== Imports ===
+=============================================================================*/
 @import "_fonts.scss";
 @import "_reset.scss";
 @import "_base.scss";
+
+/*=== Variables ===
+=============================================================================*/
+$offwhite: hsl(0,0%,95%);
+
+/*=== Main Styles ===
+=============================================================================*/
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to top, hsl(15,5%,5%), hsl(225,10%,25%));
+    color: $offwhite;
+}
+
+.ttt-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    &__title {
+        font-size: 70px;
+        margin-bottom: 20px;
+
+    }
+}
+
+.ttt-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__players {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        width: 450px;
+        margin-bottom: 30px;
+    }
+    &__player-panel, &__gamebuttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__player-name--1, &__player-name--2 {
+        font-size: 20px;
+    }
+
+    &__player-mark--1, &__player-mark--2 {
+        font-size: 50px;
+    }
+
+    &__gamebuttons button{
+        font-size: 20px;
+        padding: 5px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+
+        &:active {
+            color: hsl(0,0%,60%);
+            border: 1px solid hsl(0,0%,60%);
+        }
+    }
+
+    &__winner {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__gameboard {
+        width: 490px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    &__cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
+        font-size: 100px;
+        border: 1px solid $offwhite;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.active-player {
+    text-decoration: underline;
+    color: hsl(20,100%,70%);
+}
+.invisible {
+    visibility: hidden;
+}

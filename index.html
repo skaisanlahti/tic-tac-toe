@@ -7,38 +7,41 @@
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
-    <header>
-        <h1>Tic-Tac-Toe</h1>
+    <header class="ttt-header">
+        <h1 class="ttt-header__title">Tic-Tac-Toe</h1>
     </header>
-    <div>
-        <main>
-            <h1>Header</h1>
-            <h2>Header</h2>
-            <h3>Header</h3>
-            <h4>Header</h4>
-            <h5>Header</h5>
-            <h6>Header</h6>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis quaerat praesentium. Ratione error maxime, laudantium quod sapiente culpa odit doloremque, quo temporibus repellat nemo earum aliquam praesentium. Quae, consequatur.
-            </p>
-            <ul>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ul>
-            <ol>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ol>
-            <p>
-                <a>Links of various length</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia <a>Links of various length</a> sunt enim, deserunt nemo asperiores quo, ab natus qui distinctio totam unde reprehenderit porro accusamus vel illum molestias aliquid <a>Links of various length</a> nisi alias!
-            </p>
-        </main>
-        <footer>
-            <p>Footer text</p>
-        </footer>
-    </div>
+    <main class="ttt-main">
+        <div class="ttt-main__players">
+            <div class="ttt-main__player-panel">
+                <div class="ttt-main__player-name--1">player1</div>
+                <div class="ttt-main__player-mark--1">X</div>
+            </div>
+            <div class="ttt-main__gamebuttons">
+                <button class="ttt-main__reset invisible">Reset Game</button>
+            </div>    
+            <div class="ttt-main__player-panel">
+                <div class="ttt-main__player-name--2">player2</div>
+                <div class="ttt-main__player-mark--2">O</div>
+            </div>
+        </div>
+        <div class="ttt-main__winner invisible">
+            Winner:
+        </div>
+        <div class="ttt-main__gameboard">
+            <!-- First Row -->
+            <div class="ttt-main__cell">X</div>
+            <div class="ttt-main__cell">O</div>
+            <div class="ttt-main__cell">O</div>
+            <!-- Second Row -->
+            <div class="ttt-main__cell">X</div>
+            <div class="ttt-main__cell">X</div>
+            <div class="ttt-main__cell">O</div>
+            <!-- Third Row -->
+            <div class="ttt-main__cell">X</div>
+            <div class="ttt-main__cell"></div>
+            <div class="ttt-main__cell">O</div>
+        </div>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
